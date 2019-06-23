@@ -1,24 +1,16 @@
 from spider import compare
 
 from flask import Flask
+from flask import render_template
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '<p>UOJ 题目比较器 by memset0.</p><p>使用方式 &lt;GET&gt; <code>/<他的用户名>/<你的用户名></code> </p>'
+    return render_template('index.html', mode="index")
 
 @app.route('/<userA>/<userB>')
 def query(userA, userB):
-	result = ''
-	problem_list = compare(userA, userB)
-	for problem in problem_list:
-		result += '<p>#{id}. {name} <code>{A}</code> <code>{B}</code></p>'.format(
-			id = problem.problem_id,
-			name = problem.problem_name,
-			A = '[x]' if problem.status_a else '[ ]',
-			B = '[x]' if problem.status_b else '[ ]'
-		)
-	return result;
+	return render_template('index.html', mode="compare", result=compare(userA, userB), user_a=userA, user_b=userB)
 
 if __name__ == '__main__':
     app.run()
