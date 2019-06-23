@@ -1,0 +1,2609 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <title> UOJ 通过比较器 </title>
+    <link rel="shortcut icon" href="https://memset0.cn/favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
+    <style>
+		/* main {background: #424242} */
+		.demo-footer {padding-left: 40px}
+		.demo-content h3 {margin-top: 48px}
+		.demo-table {font-size:14px}
+		.demo-header .mdl-layout__header-row {padding-left: 40px;background: #3F51B5; color: #fff}
+		.demo-footer .mdl-mini-footer--link-list a {font-size: 13px}
+		.demo-layout.is-small-screen .demo-content {padding: 40px 28px}
+		.demo-content {border-radius:2px;padding: 80px 56px;margin-bottom: 300px}
+		.demo-container {max-width: 1600px;width: calc(100% - 16px);margin: 0 auto}
+		.demo-main {margin-top: -35vh;-webkit-flex-shrink: 0;-ms-flex-negative: 0;flex-shrink: 0;}
+		.demo-ribbon {width: 100%;height: 40vh;background-color: #3F51B5;-webkit-flex-shrink: 0;-ms-flex-negative: 0;flex-shrink: 0}
+		td > a {text-decoration: none; color: #424242;}
+		.table-align-left { text-align: left !important; }
+		.table-align-center { text-align: center !important; }
+		.table-align-right { text-align: right !important; }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title"> UOJ 通过比较器 </span>
+        </div>
+      </header>
+	  <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+		  <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+
+
+		  
+<table class="demo-table demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col mdl-data-table mdl-js-data-table">
+<thead>
+<tr>
+	<th class="mdl-data-table__cell--non-numeric" style="width: 30px">ID</th>
+	<th class="mdl-data-table__cell--non-numeric">题目</th>
+	<th class="mdl-data-table__cell--non-numeric" style="width: 15px">memset0 的状态</th>
+	<th class="mdl-data-table__cell--non-numeric" style="width: 15px">zx2003 的状态</th>
+</tr>
+</thead>
+<tbody>
+
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/1">1</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/1">A + B Problem</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=1&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=1&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/3">3</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/3">【NOI2014】魔法森林</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=3&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=3&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/6">6</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/6">【NOI2014】随机数生成器</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=6&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/8">8</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/8">Quine</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=8&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/9">9</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/9">【UTR #1】vfk的数据</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=9&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=9&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/12">12</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/12">【UER #1】猜数</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=12&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=12&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/14">14</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/14">【UER #1】DZY Loves Graph</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=14&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/15">15</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/15">【NOIP2014】生活大爆炸版石头剪刀布</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=15&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/16">16</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/16">【NOIP2014】联合权值</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=16&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/17">17</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/17">【NOIP2014】飞扬的小鸟</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=17&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/18">18</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/18">【NOIP2014】无线网络发射器选址</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=18&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/20">20</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/20">【NOIP2014】解方程</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=20&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/21">21</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/21">【UR #1】缩进优化</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=21&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/31">31</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/31">【UR #2】猪猪侠再战括号序列</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=31&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/33">33</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/33">【UR #2】树上GCD</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=33&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/34">34</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/34">多项式乘法</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=34&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=34&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/35">35</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/35">后缀排序</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=35&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=35&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/36">36</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/36">【清华集训2014】玛里苟斯</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=36&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/42">42</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/42">【清华集训2014】Sum</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=42&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/48">48</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/48">【UR #3】核聚变反应强度</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=48&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/49">49</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/49">【UR #3】铀仓库</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=49&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/50">50</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/50">【UR #3】链式反应</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=50&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/51">51</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/51">【UR #4】元旦三侠的游戏</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=51&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/52">52</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/52">【UR #4】元旦激光炮</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=52&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/53">53</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/53">【UR #4】追击圣诞老人</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=53&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/55">55</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/55">【WC2014】紫荆花之恋</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=55&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/60">60</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/60">【UR #5】怎样提高智商</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=60&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/61">61</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/61">【UR #5】怎样更有力气</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=61&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/62">62</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/62">【UR #5】怎样跑得更快</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=62&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/63">63</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/63">动态仙人掌 I</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=63&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/74">74</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/74">【UR #6】破解密码</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=74&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/75">75</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/75">【UR #6】智商锁</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=75&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=75&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/77">77</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/77">A+B Problem</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=77&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/80">80</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/80">二分图最大权匹配</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=80&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/82">82</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/82">【UR #7】水题生成器</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=82&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/103">103</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/103">【APIO2014】Palindromes</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=103&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/109">109</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/109">【APIO2013】TASKSAUTHOR</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=109&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/113">113</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/113">【UER #2】手机的生产</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=113&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/114">114</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/114">【UER #2】信息的交换</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=114&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/115">115</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/115">【UER #2】谣言的传播</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=115&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/118">118</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/118">【UR #8】赴京赶考</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=118&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/119">119</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/119">【UR #8】决战圆锥曲线</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=119&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/127">127</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/127">【NOI2015】程序自动分析</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=127&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/128">128</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/128">【NOI2015】软件包管理器</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=128&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=128&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/129">129</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/129">【NOI2015】寿司晚宴</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=129&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=129&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/130">130</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/130">【NOI2015】荷马史诗</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=130&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/133">133</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/133">【UR #9】电路手动分析</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=133&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/134">134</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/134">【UR #9】App 管理器</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=134&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=134&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/136">136</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/136">【UER #3】开学前的作文</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=136&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/137">137</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/137">【UER #3】开学前的日历</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=137&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/139">139</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/139">【UER #4】被删除的黑白树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=139&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/140">140</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/140">【UER #4】被粉碎的数字</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=140&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/142">142</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/142">【UER #5】万圣节的南瓜灯</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=142&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/143">143</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/143">【UER #5】万圣节的数列</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=143&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/144">144</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/144">【UER #5】万圣节的糖果</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=144&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/147">147</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/147">【NOIP2015】斗地主</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=147&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=147&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/150">150</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/150">【NOIP2015】运输计划</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=150&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/152">152</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/152">【UR #10】汉诺塔</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=152&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/167">167</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/167">【UR #11】元旦老人与汉诺塔</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=167&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/168">168</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/168">【UR #11】元旦老人与丛林</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=168&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/174">174</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/174">新年的破栈</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=174&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/175">175</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/175">新年的网警</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=175&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/176">176</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/176">新年的繁荣</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=176&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/177">177</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/177">新年的腮雷</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=177&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/180">180</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/180">【UR #12】实验室外的攻防战</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=180&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/182">182</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/182">【UR #12】a^-1 + b problem</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=182&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/184">184</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/184">【ZJOI2016】旅行者</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=184&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=184&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/185">185</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/185">【ZJOI2016】小星星</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=185&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/186">186</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/186">【UR #13】Yist</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=186&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/187">187</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/187">【UR #13】Ernd</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=187&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/188">188</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/188">【UR #13】Sanrd</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=188&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/192">192</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/192">【UR #14】最强跳蚤</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=192&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/193">193</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/193">【UR #14】人类补完计划</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=193&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/195">195</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/195">【ZJOI2016】大♂森林</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=195&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=195&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/196">196</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/196">【ZJOI2016】线段树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=196&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/197">197</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/197">【ZJOI2016】电阻网络</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=197&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/201">201</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/201">【CTSC2016】单调上升路径</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=201&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/204">204</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/204">【APIO2016】Boat</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=204&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/206">206</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/206">【APIO2016】Gap</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=206&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/207">207</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/207">共价大爷游长沙</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=207&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/213">213</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/213">【UNR #1】争夺圣杯</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=213&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/216">216</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/216">【UNR #1】Jakarta Skyscrapers</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=216&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/218">218</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/218">【UNR #1】火车管理</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=218&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/219">219</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/219">【NOI2016】优秀的拆分</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=219&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=219&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/220">220</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/220">【NOI2016】网格</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=220&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/221">221</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/221">【NOI2016】循环之美</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=221&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/222">222</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/222">【NOI2016】区间</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=222&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/228">228</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/228">基础数据结构练习题</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=228&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/239">239</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/239">【IOI2016】messy</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=239&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/244">244</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/244">【UER #7】短路</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=244&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/245">245</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/245">【UER #7】天路</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=245&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/246">246</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/246">【UER #7】套路</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=246&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/260">260</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/260">【NOIP2016】玩具谜题</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=260&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/261">261</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/261">【NOIP2016】天天爱跑步</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=261&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/262">262</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/262">【NOIP2016】换教室</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=262&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/263">263</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/263">【NOIP2016】组合数问题</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=263&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/264">264</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/264">【NOIP2016】蚯蚓</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=264&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/265">265</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/265">【NOIP2016】愤怒的小鸟</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=265&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/268">268</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/268">【清华集训2016】数据交互</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=268&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/269">269</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/269">【清华集训2016】如何优雅地求和</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=269&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/271">271</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/271">【清华集训2016】连通子树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=271&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/278">278</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/278">【UTR #2】题目排列顺序</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=278&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/279">279</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/279">【UTR #2】题目交流通道</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=279&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/280">280</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/280">【UTR #2】题目难度提升</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=280&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/282">282</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/282">长度测量鸡</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=282&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/283">283</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/283">直径拆除鸡</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=283&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/284">284</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/284">快乐游戏鸡</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=284&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/285">285</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/285">数据分块鸡</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=285&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/290">290</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/290">【ZJOI2017】仙人掌</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=290&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/295">295</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/295">【ZJOI2017】线段树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=295&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/296">296</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/296">【ZJOI2017】字符串</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=296&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/298">298</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/298">【CTSC2017】网络</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=298&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/300">300</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/300">【CTSC2017】吉夫特</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=300&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/308">308</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/308">【UNR #2】UOJ拯救计划</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=308&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/310">310</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/310">【UNR #2】黎明前的巧克力</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=310&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/311">311</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/311">【UNR #2】积劳成疾</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=311&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/314">314</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/314">【NOI2017】整数</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=314&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/315">315</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/315">【NOI2017】蚯蚓排队</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=315&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/318">318</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/318">【NOI2017】蔬菜</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=318&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/326">326</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/326">【UTR #3】几何冲刺</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=326&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/327">327</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/327">【UTR #3】去月球</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=327&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/328">328</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/328">【UTR #3】量子破碎</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=328&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/331">331</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/331">【NOIP2017】逛公园</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=331&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/333">333</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/333">【NOIP2017】宝藏</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=333&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/334">334</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/334">【NOIP2017】列队</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=334&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/335">335</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/335">【清华集训2017】生成树计数</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=335&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/345">345</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/345">【清华集训2017】榕树之心</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=345&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/347">347</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/347">【WC2018】通道</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=347&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/348">348</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/348">【WC2018】州区划分</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=348&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/349">349</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/349">【WC2018】即时战略</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=349&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/350">350</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/350">新年的XOR</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=350&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/351">351</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/351">新年的叶子</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=351&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/352">352</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/352">新年的五维几何</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=352&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/370">370</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/370">【UR #17】滑稽树上滑稽果</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=370&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/371">371</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/371">【UR #17】滑稽树下你和我</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=371&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/372">372</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/372">【UR #17】滑稽树前做游戏</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=372&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/373">373</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/373">【ZJOI2018】线图</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=373&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/374">374</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/374">【ZJOI2018】历史</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=374&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/387">387</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/387">【UNR #3】To Do Tree</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=387&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/388">388</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/388">【UNR #3】配对树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=388&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/393">393</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/393">【NOI2018】归程</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=393&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/395">395</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/395">【NOI2018】你的名字</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=395&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/396">396</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/396">【NOI2018】屠龙勇士</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=396&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/397">397</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/397">【NOI2018】情报中心</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=397&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/401">401</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/401">【CTSC2018】青蕈领主</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=401&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/405">405</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/405">【IOI2018】组合动作</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=405&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/406">406</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/406">【IOI2018】排座位</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=406&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/408">408</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/408">【IOI2018】机械娃娃</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=408&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/409">409</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/409">【IOI2018】高速公路收费</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=409&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/416">416</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/416">【APIO2018】铁人两项</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=416&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/418">418</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/418">【集训队作业2018】三角形</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=418&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/419">419</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/419">【集训队作业2018】圆形</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=419&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/421">421</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/421">【集训队作业2018】基础线段树练习题</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=421&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/422">422</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/422">【集训队作业2018】小Z的礼物</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=422&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/424">424</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/424">【集训队作业2018】count</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=424&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/425">425</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/425">【集训队作业2018】strings</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=425&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/426">426</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/426">【集训队作业2018】石像</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=426&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/427">427</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/427">【集训队作业2018】化学竞赛</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=427&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/429">429</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/429">【集训队作业2018】串串划分</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=429&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/430">430</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/430">【集训队作业2018】line</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=430&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/431">431</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/431">【集训队作业2018】time map</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=431&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/433">433</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/433">【集训队作业2018】串串</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=433&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/434">434</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/434">【集训队作业2018】购物</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=434&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/435">435</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/435">【集训队作业2018】Simple Tree</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=435&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=435&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/441">441</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/441">【NOIP2018】保卫王国</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=441&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/442">442</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/442">【集训队作业2018】观众小P</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=442&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/443">443</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/443">【集训队作业2018】不可名状</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=443&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/445">445</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/445">【集训队作业2018】暴躁的排序鸽</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=445&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/449">449</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/449">【集训队作业2018】喂鸽子</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=449&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/450">450</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/450">【集训队作业2018】复读机</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=450&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/455">455</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/455">【UER #8】雪灾与外卖</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=455&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/456">456</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/456">【UER #8】许愿树和圣诞树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=456&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/461">461</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/461">新年的Dog划分</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=461&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/463">463</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/463">新年的族谱树</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=463&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/465">465</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/465">【HNOI2019】校园旅行</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=465&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/466">466</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/466">【ZJOI2019】麻将</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=466&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=466&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/467">467</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/467">【ZJOI2019】线段树</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=467&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=467&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/468">468</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/468">【ZJOI2019】Minimax搜索</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=468&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/470">470</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/470">【ZJOI2019】语言</a></td>
+	<td class="table-align-center">
+			
+			<a href="http://uoj.ac/submissions?problem_id=470&submitter=memset0" style="color: green">AC</a>
+		
+	</td>
+	<td class="table-align-center">
+		
+		
+	</td>
+</tr>
+
+<tr>
+	<td class="table-align-right"><a href="https://uoj.ac/problem/471">471</a></td>
+	<td class="table-align-left"><a href="https://uoj.ac/problem/471">【ZJOI2019】浙江省选</a></td>
+	<td class="table-align-center">
+			
+		
+	</td>
+	<td class="table-align-center">
+		
+			<a href="http://uoj.ac/submissions?problem_id=471&submitter=zx2003" style="color: green">AC</a>
+		
+	</td>
+</tr>
+
+
+</tbody>
+</table>
+
+
+
+		</div>
+        <footer class="demo-footer mdl-mega-footer">
+          <div class="mdl-mini-footer--left-section">
+            <a href="https://memset0.cn"style="text-decoration:none;font-weight:900;color:#aaa">
+              @memset0
+            </a>
+            2019.
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
