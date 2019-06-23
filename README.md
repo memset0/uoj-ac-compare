@@ -27,3 +27,7 @@ $ python3 server.py
 可以打开 [这个](https://memset0.github.io/uoj-ac-compare/demo.htm) 页面查看部署后的效果。这是一个静态的 Demo 页面，在功能进一步完善后 **将很快上线在线的 Demo 页面** 供大家浏览和使用。
 
 ![](https://memset0.github.io/uoj-ac-compare/demo.png)
+
+### License
+
+GNU v3.
