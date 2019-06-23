@@ -20,7 +20,7 @@ $ python3 server.py
 ##### Examples
 
 * `/memset0/zx2003` 获取 memset0 和 zx2003 做题记录的比较结果
-* `/memset0/zx2003?begin=335&end=246` 获取 memset0 和 zx2003 关于清华集训 2017 的做题记录的比较结果
+* `/memset0/zx2003?begin=335&end=346` 获取 memset0 和 zx2003 关于清华集训 2017 的做题记录的比较结果
 
 ### Demo 
 
