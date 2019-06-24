@@ -66,7 +66,7 @@ def compare(user_list):
 		solved_set[user] = set(getAcceptList(user))
 		merged_set = merged_set | solved_set[user]
 	result = []
-	for problem in merged_set:
+	for problem in sorted(merged_set):
 		status_list = [ (problem in solved_set[user]) for user in user_list ]
 		result.append(Problem(problem, nameDict[problem], status_list))
 	return result

@@ -19,11 +19,13 @@ $ python3 server.py
 * `user`：用于给定若干用户名，不同用户名之间用逗号分隔
 * `begin`：用于指定起始比较的题目标号
 * `end`：用于指定结束比较的题目标号
+* `except`: 用于指定排除的题目标号
 
 ##### Examples
 
 * `/user/memset0,zx2003,CMXRYNP` 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
-* `/user/memset0,zx2003/begin/335/end/346` 获取 memset0 和 zx2003 关于清华集训 2017 的做题记录的比较结果
+* `/user/memset0,zx2003/begin/335/end/346` 获取 memset0 和 zx2003 关于「清华集训 2017」的做题记录的比较结果
+* `/user/memset0/begin/335/end/346/except/335,345` 获取 memset0 的在「清华集训 2017」的做题记录中除了「榕树之心」和「生成树计数」的做题记录
 
 ### Demo 
 

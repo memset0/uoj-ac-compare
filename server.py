@@ -19,19 +19,33 @@ def get(path):
     print(value)
         
     user_list = []
-    for user in value['user'].split(','):
-        real = ''
-        for ch in user:
-            if '0' <= ch and ch <= '9' or 'a' <= ch and ch <= 'z' or 'A' <= ch and ch <= 'Z':
-                real += ch
-        if user != '':
-            user_list.append(user)
+    if 'user' in value.keys():
+        for user in value['user'].split(','):
+            real = ''
+            for ch in user:
+                if '0' <= ch and ch <= '9' or 'a' <= ch and ch <= 'z' or 'A' <= ch and ch <= 'Z':
+                    real += ch
+            if real != '':
+                user_list.append(real)
+
+    except_list = []
+    if 'except' in value.keys():
+        for problem_id in value['except'].split(','):
+            real = 0
+            for ch in problem_id:
+                if '0' <= ch and ch <= '9':
+                    real = real * 10 + int(ch)
+            if real != 0:
+                except_list.append(real)
+    print(except_list)
 
     result = []
     for problem in compare(user_list):
         if 'begin' in value.keys() and problem.problem_id < int(value['begin']):
             continue
         if 'end' in value.keys() and problem.problem_id > int(value['end']):
+            continue
+        if problem.problem_id in except_list:
             continue
         result.append(problem)
     return render_template('index.html', mode="compare", result=result, user_list=user_list)
