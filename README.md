@@ -23,13 +23,15 @@ $ python3 server.py
 
 ##### Examples
 
-* `/user/memset0,zx2003,CMXRYNP` 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
-* `/user/memset0,zx2003/begin/335/end/346` 获取 memset0 和 zx2003 关于「清华集训 2017」的做题记录的比较结果
-* `/user/memset0/begin/335/end/346/except/335,345` 获取 memset0 的在「清华集训 2017」的做题记录中除了「榕树之心」和「生成树计数」的做题记录
+* [`/user/memset0,zx2003,CMXRYNP`](https://uoj.memset0.cn//user/memset0,zx2003,CMXRYNP) 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
+* [`/user/memset0,zx2003/begin/335/end/346`](https://uoj.memset0.cn/user/memset0,zx2003/begin/335/end/346) 获取 memset0 和 zx2003 关于「清华集训 2017」的做题记录的比较结果
+* [`/user/memset0/begin/335/end/346/except/335,345`](https://uoj.memset0.cn/user/memset0/begin/335/end/346/except/335,345) 获取 memset0 的在「清华集训 2017」的做题记录中除了「榕树之心」和「生成树计数」的做题记录
 
 ### Demo 
 
-可以打开 [这个](https://memset0.github.io/uoj-ac-compare/demo.htm) 页面查看部署后的效果。这是一个静态的 Demo 页面，在功能进一步完善后 **将很快上线在线的 Demo 页面** 供大家浏览和使用。
+在线 Demo：[uoj.memset0.cn](https://uoj.memset0.cn) 。
+
+请勿滥用或恶意攻击此地址，否则可能会关闭此演示站点。
 
 ![](https://memset0.github.io/uoj-ac-compare/demo.png)
 
