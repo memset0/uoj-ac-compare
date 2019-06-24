@@ -40,38 +40,33 @@
 
 {% else %}
 		  
-<table class="demo-table demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col mdl-data-table mdl-js-data-table">
-<thead>
-<tr>
-	<th class="mdl-data-table__cell--non-numeric" style="width: 30px">ID</th>
-	<th class="mdl-data-table__cell--non-numeric">题目</th>
-	<th class="mdl-data-table__cell--non-numeric" style="width: 15px">{{ user_a }} 的状态</th>
-	<th class="mdl-data-table__cell--non-numeric" style="width: 15px">{{ user_b }} 的状态</th>
-</tr>
-</thead>
-<tbody>
-
-{% for it in result %}
-<tr>
-	<td class="table-align-right"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_id }}</a></td>
-	<td class="table-align-left"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_name }}</a></td>
-	<td class="table-align-center">
-			{% if it.status_a %}
-			<a href="http://uoj.ac/submissions?problem_id={{ it.problem_id }}&submitter={{ user_a }}" style="color: green">AC</a>
-		{% else %}
-		{% endif %}
-	</td>
-	<td class="table-align-center">
-		{% if it.status_b %}
-			<a href="http://uoj.ac/submissions?problem_id={{ it.problem_id }}&submitter={{ user_b }}" style="color: green">AC</a>
-		{% else %}
-		{% endif %}
-	</td>
-</tr>
-{% endfor %}
-
-</tbody>
-</table>
+	<table class="demo-table demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col mdl-data-table mdl-js-data-table">
+		<thead>
+			<tr>
+				<th class="mdl-data-table__cell--non-numeric" style="width: 30px">ID</th>
+				<th class="mdl-data-table__cell--non-numeric">题目</th>
+				{% for user in user_list %}
+					<th class="mdl-data-table__cell--non-numeric" style="width: 15px">{{ user }}</th>
+				{% endfor %}
+			</tr>
+		</thead>
+		<tbody>
+		{% for it in result %}
+		<tr>
+			<td class="table-align-right"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_id }}</a></td>
+			<td class="table-align-left"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_name }}</a></td>
+			{% for status in it.status_list %}
+				<td class="table-align-center">
+					{% if status %}
+						<a href="http://uoj.ac/submissions?problem_id={{ it.problem_id }}&submitter={{ user_a }}" style="color: green">AC</a>
+					{% else %}
+					{% endif %}
+				</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+		</tbody>
+	</table>
 
 {% endif %}
 

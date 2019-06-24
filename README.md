@@ -10,17 +10,20 @@ $ pip3 install requests
 $ python3 server.py
 ```
 
-打开 `localhost:5000/<你的用户名>/<对方的用户名>` 即可查看比较结果。
+### Route
 
 ##### Values
 
-* `begin`：表示开始比较的题目 ID
-* `end`：表示结束比较的题目 ID
+每个参数部分由参数名和参数值构成，在 URL 中依次给定参数名和参数值，之间用逗号分隔即可
+
+* `user`：用于给定若干用户名，不同用户名之间用逗号分隔
+* `begin`：用于指定起始比较的题目标号
+* `end`：用于指定结束比较的题目标号
 
 ##### Examples
 
-* `/memset0/zx2003` 获取 memset0 和 zx2003 做题记录的比较结果
-* `/memset0/zx2003?begin=335&end=346` 获取 memset0 和 zx2003 关于清华集训 2017 的做题记录的比较结果
+* `/user/memset0,zx2003,CMXRYNP` 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
+* `/user/memset0,zx2003/begin/335/end/346` 获取 memset0 和 zx2003 关于清华集训 2017 的做题记录的比较结果
 
 ### Demo 
 

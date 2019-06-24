@@ -1,18 +1,18 @@
 import re, requests
 
 class Problem:
-	def __init__(self, problem_name, problem_id, status_a, status_b):
-		self.problem_name = problem_name
+	def __init__(self, problem_id, problem_name, status_list):
 		self.problem_id = problem_id
-		self.status_a = status_a
-		self.status_b = status_b
+		self.problem_name = problem_name
+		self.status_list = status_list
 	def __str__(self):
-		return '{name} {id} {A} {B}'.format(
+		result = '#{id}. {name} :'.format(
 			name = self.problem_name,
-			id = self.problem_id,
-			A = 'True' if self.status_a else 'False',
-			B = 'True' if self.status_b else 'False'
+			id = self.problem_id
 		)
+		for status in self.status_list:
+			result += ' 1' if status else ' 0'
+		return result
 
 def request_get(url):
 	while True:
@@ -59,14 +59,18 @@ def getProblemNameMap():
 
 nameDict = getProblemNameMap()
 
-def compare(userA, userB):
-	setA = set(getAcceptList(userA))
-	setB = set(getAcceptList(userB))
+def compare(user_list):
+	solved_set = {}
+	merged_set = set()
+	for user in user_list:
+		solved_set[user] = set(getAcceptList(user))
+		merged_set = merged_set | solved_set[user]
 	result = []
-	for problem in sorted(setA | setB):
-		result.append(Problem(nameDict[problem], problem, problem in setA, problem in setB))
+	for problem in merged_set:
+		status_list = [ (problem in solved_set[user]) for user in user_list ]
+		result.append(Problem(problem, nameDict[problem], status_list))
 	return result
 
 if __name__ == '__main__':
-	for problem in compare('memset0', 'zx2003'):
+	for problem in compare(['memset0', 'zx2003']):
 		print(problem)
