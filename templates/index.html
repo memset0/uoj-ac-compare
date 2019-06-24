@@ -48,6 +48,7 @@
 				{% for user in user_list %}
 					<th class="mdl-data-table__cell--non-numeric" style="width: 15px">{{ user }}</th>
 				{% endfor %}
+				<th class="mdl-data-table__cell--non-numeric" style="width: 1px"></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -56,13 +57,14 @@
 			<td class="table-align-right"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_id }}</a></td>
 			<td class="table-align-left"><a href="https://uoj.ac/problem/{{ it.problem_id }}">{{ it.problem_name }}</a></td>
 			{% for status in it.status_list %}
-				<td class="table-align-center">
-					{% if status %}
-						<a href="http://uoj.ac/submissions?problem_id={{ it.problem_id }}&submitter={{ user_a }}" style="color: green">AC</a>
-					{% else %}
-					{% endif %}
-				</td>
+			<td class="table-align-center">
+				{% if status %}
+				<a href="http://uoj.ac/submissions?problem_id={{ it.problem_id }}&submitter={{ user_a }}" style="color: green">AC</a>
+				{% else %}
+				{% endif %}
+			</td>
 			{% endfor %}
+			<td class="table-align-right"><a href="{{ it.excepted_url }}">X</a></td>
 		</tr>
 		{% endfor %}
 		</tbody>

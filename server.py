@@ -6,17 +6,32 @@ app = Flask(__name__)
 def error(message="Unknown"):
     return '403: ' + message
 
-@app.route('/', defaults={'path': ''})
+def build_str(key):
+    if isinstance(key, list):
+        result = build_str(key[0])
+        for i in range(1, len(key)):
+            result += ',' + build_str(key[i])
+        return result
+    return str(key)
+
+def build_route(value):
+    route = ''
+    for key, val in value.items():
+        route += '/' + build_str(key) + '/' + build_str(val)
+    return route
+
+@app.route('/', defaults={'path': 'index.html'})
 @app.route('/<path:path>')
 def get(path):
+    if path == 'index.html':
+        return render_template('index.html', mode="index")
+
     value = {}
     path_list = path.split('/')
-    print(path_list)
     if len(path_list) % 2 == 1:
         return error('Wrong Path')
     for i in range(0, len(path_list) // 2):
         value[path_list[i * 2]] = path_list[i * 2 + 1]
-    print(value)
         
     user_list = []
     if 'user' in value.keys():
@@ -37,7 +52,6 @@ def get(path):
                     real = real * 10 + int(ch)
             if real != 0:
                 except_list.append(real)
-    print(except_list)
 
     result = []
     for problem in compare(user_list):
@@ -47,6 +61,11 @@ def get(path):
             continue
         if problem.problem_id in except_list:
             continue
+        temp_value = value
+        temp_value['user'] = user_list
+        temp_value['except'] = except_list[:]
+        temp_value['except'].append(problem.problem_id)
+        problem.excepted_url = build_route(temp_value)
         result.append(problem)
     return render_template('index.html', mode="compare", result=result, user_list=user_list)
 
