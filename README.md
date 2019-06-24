@@ -23,9 +23,9 @@ $ python3 server.py
 
 ##### Examples
 
-* [`/user/memset0,zx2003,CMXRYNP`](https://uoj.memset0.cn//user/memset0,zx2003,CMXRYNP) 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
-* [`/user/memset0,zx2003/begin/335/end/346`](https://uoj.memset0.cn/user/memset0,zx2003/begin/335/end/346) 获取 memset0 和 zx2003 关于「清华集训 2017」的做题记录的比较结果
-* [`/user/memset0/begin/335/end/346/except/335,345`](https://uoj.memset0.cn/user/memset0/begin/335/end/346/except/335,345) 获取 memset0 的在「清华集训 2017」的做题记录中除了「榕树之心」和「生成树计数」的做题记录
+* [`/user/memset0,zx2003,CMXRYNP`](https://uoj.memset0.cn/user/memset0,zx2003,CMXRYNP) 获取 memset0 、 zx2003 和 CMXRYNP 做题记录的比较结果
+* [`/user/memset0,zx2003/begin/417/end/435`](https://uoj.memset0.cn/user/memset0,zx2003/begin/417/end/435) 获取 memset0 和 zx2003 关于「集训队作业2018」的做题记录的比较结果
+* [`/user/memset0,zx2003/begin/417/end/435/except/418,419,420`](https://uoj.memset0.cn/user/memset0,zx2003/begin/417/end/435/except/418,419,420) 获取 memset0 和 zx2003 关于「集训队作业2018」除了「三角形」「圆形」和「矩形」的做题记录的比较结果
 
 ### Demo 
 
