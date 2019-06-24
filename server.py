@@ -50,6 +50,10 @@ def get(path):
             for ch in problem_id:
                 if '0' <= ch and ch <= '9':
                     real = real * 10 + int(ch)
+            if 'begin' in value.keys() and real < int(value['begin']):
+                continue
+            if 'end' in value.keys() and real > int(value['end']):
+                continue
             if real != 0:
                 except_list.append(real)
 
