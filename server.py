@@ -74,4 +74,4 @@ def get(path):
     return render_template('index.html', mode="compare", result=result, user_list=user_list)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(port=3765)
