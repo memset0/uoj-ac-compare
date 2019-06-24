@@ -57,15 +57,16 @@ def getProblemNameMap():
 		result.update(getProblemNameFromText(req.text))
 	return result
 
+nameDict = getProblemNameMap()
+
 def compare(userA, userB):
 	setA = set(getAcceptList(userA))
 	setB = set(getAcceptList(userB))
-	nameDict = getProblemNameMap()
 	result = []
 	for problem in sorted(setA | setB):
 		result.append(Problem(nameDict[problem], problem, problem in setA, problem in setB))
 	return result
 
 if __name__ == '__main__':
-	for problem in compare('memset0', 'daniel14311531'):
+	for problem in compare('memset0', 'zx2003'):
 		print(problem)
