@@ -38,7 +38,7 @@ def get(path):
         for user in value['user'].split(','):
             real = ''
             for ch in user:
-                if '0' <= ch and ch <= '9' or 'a' <= ch and ch <= 'z' or 'A' <= ch and ch <= 'Z':
+                if '0' <= ch and ch <= '9' or 'a' <= ch and ch <= 'z' or 'A' <= ch and ch <= 'Z' or ch == '_':
                     real += ch
             if real != '':
                 user_list.append(real)
