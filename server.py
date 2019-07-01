@@ -28,6 +28,8 @@ def get(path):
 
     value = {}
     path_list = path.split('/')
+    if len(path_list) > 0 and path_list == '':
+        patH_list.pop()
     if len(path_list) % 2 == 1:
         return error('Wrong Path')
     for i in range(0, len(path_list) // 2):
